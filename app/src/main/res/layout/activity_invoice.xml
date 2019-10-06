@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".invoice">
+
+
+
+<!--    <Button-->
+<!--        android:id="@+id/button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_below="@+id/textView8"-->
+<!--        android:layout_marginEnd="0dp"-->
+<!--        android:layout_marginLeft="17dp"-->
+<!--        android:layout_marginRight="12dp"-->
+<!--        android:layout_marginStart="0dp"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:background="@color/colorPrimary"-->
+<!--        android:onClick="addInvoice"-->
+<!--        android:text="إدخــــال"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textStyle="bold" />-->
+
+
+
+<!--    &lt;!&ndash;    Header start&ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/lin4"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:orientation="horizontal">-->
+<!--        <Spinner-->
+<!--            android:id="@+id/spinner2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:background="#E3FAE9"-->
+<!--            tools:layout_editor_absoluteX="100dp"-->
+<!--            tools:layout_editor_absoluteY="25dp" />-->
+<!--    </LinearLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rel"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/lin4"-->
+<!--        android:layout_marginTop="0dp">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextWieght1"-->
+<!--            android:layout_width="140dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginEnd="15dp"-->
+<!--            android:layout_marginRight="261dp"-->
+<!--            android:background="#F3B7B7"-->
+<!--            android:ems="10"-->
+<!--            android:hint="الوزن"-->
+<!--            android:inputType="numberDecimal"-->
+<!--            android:nextFocusDown="@id/editforprice" />-->
+
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginEnd="0dp"-->
+<!--            android:layout_marginLeft="2dp"-->
+<!--            android:background="#FF0000"-->
+<!--            android:text="X"-->
+<!--            android:textColor="#fff"-->
+<!--            android:textSize="35sp"-->
+<!--            android:layout_marginRight="158dp"-->
+<!--            android:layout_marginStart="0dp"-->
+<!--            android:onClick="clear"-->
+<!--            android:layout_toEndOf="@+id/editforprice"-->
+<!--            android:layout_toLeftOf="@+id/editTextWieght1"-->
+<!--            android:layout_toRightOf="@+id/editforprice"-->
+<!--            android:layout_toStartOf="@+id/editTextWieght1">-->
+
+<!--        </Button>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editforprice"-->
+<!--            android:layout_width="140dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_marginLeft="0dp"-->
+<!--            android:layout_marginStart="15dp"-->
+<!--            android:background="#EEE9BC"-->
+<!--            android:ems="10"-->
+<!--            android:nextFocusDown="@id/editTextWieght1"-->
+<!--            android:focusable="true"-->
+<!--            android:hint="سعر الكيلو"-->
+<!--            android:inputType="numberDecimal" />-->
+<!--    </RelativeLayout>-->
+<!--    <TextView-->
+<!--        android:id="@+id/textView8"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:textColor="@color/colorPrimary"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="38sp"-->
+<!--        android:layout_below="@+id/rel"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        />-->
+<!--    -->
+
+<!--&lt;!&ndash;    Header End&ndash;&gt;-->
+
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/weight"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/button"-->
+<!--        android:layout_marginEnd="55dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_toLeftOf="@+id/type"-->
+<!--        android:layout_toStartOf="@+id/type"-->
+<!--        android:text="الوزن">-->
+
+<!--    </TextView>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/price"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/button"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_toLeftOf="@+id/weight"-->
+<!--        android:layout_toStartOf="@+id/weight"-->
+<!--        android:text="السعر">-->
+
+<!--    </TextView>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/datetext"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/button"-->
+<!--        android:layout_marginEnd="45dp"-->
+<!--        android:layout_marginRight="15dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_toLeftOf="@+id/price"-->
+<!--        android:layout_toStartOf="@+id/price"-->
+<!--        android:text="التاريخ">-->
+
+<!--    </TextView>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/type"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_below="@+id/button"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        android:layout_marginRight="260dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:text="نوع السكراب">-->
+
+<!--    </TextView>-->
+
+
+
+
+<!--    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+<!--        android:id="@+id/swipeContainer"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_below="@+id/price"-->
+<!--        android:layout_marginBottom="0dp"-->
+<!--        android:layout_marginTop="0dp">-->
+
+<!--        <ListView-->
+<!--            android:id="@+id/listview1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="431dp"-->
+
+<!--            android:layout_below="@+id/weight"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_marginTop="5dp">-->
+
+<!--        </ListView>-->
+<!--    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+</RelativeLayout>

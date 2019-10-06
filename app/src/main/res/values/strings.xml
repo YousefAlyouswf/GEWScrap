@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">عالم البيئة الخضراء</string>
+
+    <string-array name="scrapList">
+        <item>أختر البضاعه</item>
+        <item>حديد ثقيل</item>
+        <item>حديد خفيف</item>
+        <item>نحاس احمر</item>
+        <item>نحاس اصفر</item>
+        <item>المنيوم</item>
+        <item>سلك 1</item>
+        <item>سلك 2</item>
+        <item>استيل</item>
+        <item>اسفنج</item>
+        <item>بطاريات</item>
+        <item>قارورة</item>
+        <item>بلاستيك</item>
+        <item>فرن</item>
+        <item>راديتور نحاس</item>
+        <item>راديتور المنيوم</item>
+
+    </string-array>
+</resources>

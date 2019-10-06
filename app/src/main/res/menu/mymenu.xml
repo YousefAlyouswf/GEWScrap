@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="تغيير الاسعار" android:id="@+id/manage"></item>
+    <item android:title="المشتريات" android:id="@+id/review"></item>
+    <item android:title="تواصل معنا" android:id="@+id/contact"></item>
+
+
+
+</menu>
