@@ -200,7 +200,7 @@ public class addNewInvoice extends AsyncTask<String, Void, String> {
             weight7.setText("");
             priceunit7.setText("");
         } catch (Exception e) {
-            Toast.makeText(ctx, "لا يوجد اتصال بالانترنت", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ctx, "لا يوجد اتصال", Toast.LENGTH_SHORT).show();
         }
     }
 }
