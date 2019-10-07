@@ -23,6 +23,7 @@ import androidx.annotation.RequiresApi;
 public class addNewInvoice extends AsyncTask<String, Void, String> {
 
 
+    //Add new invoice
     private Context ctx;
 
     addNewInvoice(Context ctx) {
