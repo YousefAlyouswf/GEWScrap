@@ -6,8 +6,8 @@ android {
         applicationId "com.yousef.owner.scrapcalculator2"
         minSdkVersion 15
         targetSdkVersion 28
-        versionCode 16
-        versionName "16"
+        versionCode 17
+        versionName "17"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

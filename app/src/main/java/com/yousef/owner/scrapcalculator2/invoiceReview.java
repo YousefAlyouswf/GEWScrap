@@ -22,6 +22,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 
@@ -151,7 +152,6 @@ public class invoiceReview extends AppCompatActivity {
         StrictMode.setThreadPolicy((new StrictMode.ThreadPolicy.Builder().permitNetwork().build()));
         loadData();
 
-
         try {
             customListView = new CustomListView(this, type, price, weight, date);
 
@@ -213,6 +213,9 @@ public class invoiceReview extends AppCompatActivity {
             hashSet.addAll(listDate);
             listDate.clear();
             listDate.addAll(hashSet);
+            Collections.sort(listDate);
+            System.out.println(Arrays.toString(listDate.toArray()));
+
             dateSpinner();
             findPriceByDate();
 
@@ -226,6 +229,7 @@ public class invoiceReview extends AppCompatActivity {
     public void dateSpinner() {
         Spinner spinnerDate = findViewById(R.id.date);
         String[] newdate = listDate.toArray(new String[listDate.size()]);
+        Arrays.sort(newdate, Collections.reverseOrder());
         ArrayAdapter<String> adapterDate = new ArrayAdapter<String>(invoiceReview.this
                 , android.R.layout.simple_spinner_item, newdate);
         spinnerDate.setAdapter(adapterDate);
@@ -258,7 +262,7 @@ public class invoiceReview extends AppCompatActivity {
                 TextView textView = findViewById(R.id.textTotal);
 
                 String strSum = Double.toString(sum);
-                textView.setText(strSum+" ريال");
+                textView.setText(strSum + " ريال");
 
 
             }

@@ -3,84 +3,134 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00864646"
+    android:background="#fff"
     tools:actionBarNavMode="standard"
     tools:context=".Home">
-
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="378dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="0dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginLeft="-2dp"
-        android:layout_marginRight="21dp"
-        android:layout_marginStart="0dp"
-        android:background="@color/colorPrimary"
-        android:text="تحديث الاسعار"
-        android:textColor="#FFFFEE"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <EditText
-        android:id="@+id/editTextWieght"
-        style="@style/Widget.AppCompat.AutoCompleteTextView"
-        android:layout_width="102dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/spinner"
-        android:layout_marginEnd="19dp"
-        android:layout_marginRight="19dp"
-        android:layout_marginTop="72dp"
-        android:ems="10"
-        android:hint="الوزن"
-        android:inputType="numberDecimal" />
-
     <ImageButton
         android:id="@+id/button3"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_above="@+id/button4"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="50dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginRight="159dp"
-        android:src="@drawable/bill"
+        android:layout_marginBottom="10dp"
         android:background="#00864646"
+        android:src="@drawable/bill"
         android:text="إصدار فاتورة"
         android:textSize="30sp"
         android:textStyle="bold" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#D7DFDE"
-        android:dropDownWidth="match_parent"
-        android:spinnerMode="dialog"
-        android:textAlignment="center"
-        android:textDirection="anyRtl" />
+    <ImageView
+        android:id="@+id/homegreen"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="211dp"
+        android:src="@drawable/greenearth" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/spinner"
-        android:layout_marginEnd="98dp"
-        android:layout_marginRight="98dp"
-        android:layout_marginTop="82dp"
-        android:layout_toLeftOf="@+id/editTextWieght"
-        android:layout_toStartOf="@+id/editTextWieght"
-        android:text="0"
-        android:textColor="@color/colorPrimary"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:layout_below="@+id/homegreen"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:layout_marginRight="352dp"
+        android:text="عالم البيئة الخضراء ترحب بكم" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="1dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_marginTop="25sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="352dp"
+        android:text="تطبيق لإدراة حسابات الشركة وإصدار الفواتير. قم بالضغط على الفاتورة بالاسفل لاصدار فاتورة جديده وللاطلاع على المشتريات اليومية" />
+    <!--    <Button-->
+<!--        android:id="@+id/button4"-->
+<!--        android:layout_width="378dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_marginBottom="0dp"-->
+<!--        android:layout_marginEnd="0dp"-->
+<!--        android:layout_marginLeft="-2dp"-->
+<!--        android:layout_marginRight="21dp"-->
+<!--        android:layout_marginStart="0dp"-->
+<!--        android:background="@color/colorPrimary"-->
+<!--        android:text="تحديث الاسعار"-->
+<!--        android:textColor="#FFFFEE"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/editTextWieght"-->
+<!--        style="@style/Widget.AppCompat.AutoCompleteTextView"-->
+<!--        android:layout_width="102dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_below="@+id/spinner"-->
+<!--        android:layout_marginEnd="19dp"-->
+<!--        android:layout_marginRight="19dp"-->
+<!--        android:layout_marginTop="72dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="الوزن"-->
+<!--        android:inputType="numberDecimal" />-->
+
+
+
+<!--    <Spinner-->
+<!--        android:id="@+id/spinner"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:background="#D7DFDE"-->
+<!--        android:dropDownWidth="match_parent"-->
+<!--        android:spinnerMode="dialog"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textDirection="anyRtl" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView7"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/spinner"-->
+<!--        android:layout_marginEnd="98dp"-->
+<!--        android:layout_marginRight="98dp"-->
+<!--        android:layout_marginTop="82dp"-->
+<!--        android:layout_toLeftOf="@+id/editTextWieght"-->
+<!--        android:layout_toStartOf="@+id/editTextWieght"-->
+<!--        android:text="0"-->
+<!--        android:textColor="@color/colorPrimary"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textStyle="bold" />-->
 
 
 </RelativeLayout>
